@@ -1,0 +1,67 @@
+body,html{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+}
+input{
+    font-size: 45px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 500px;
+    height: 480px;
+    background: rgb(0, 255, 170);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 0;
+    grid-gap: 15px;
+}
+
+#screen{
+    display: block;
+    height: 50px;
+    text-align: right;
+  
+}   
+button{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+button::after{
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+button:hover::after{
+    top: 0px;
+    left: 0px;
+}
+input[type="text"]{
+    background: transparent;
+    border: none;
+}

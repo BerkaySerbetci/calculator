@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+    <link href="https://img.icons8.com/ios/100/000000/apple-calculator.png" rel="icon" type="image/gif" sizes="32*32">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container" id="container">
+                <input id="screen" type="text" placeholder="0">
+        <div class="buttons" id="buttons">
+                    <button id="reset" onclick="Clear()" class="c  input" style="grid-column: span 2; " >C</button>
+                    <button id="dott" class="inputss" onclick="displayScreen('.')" >.</button>
+                    <button id="divide" class="operators" onclick="displayScreen('/')" >&#xf7;</button>
+                    <button id="seven" class="inputss" onclick="displayScreen('7')">7</button>
+                    <button id="eight" class="inputss" onclick="displayScreen('8')">8</button>
+                    <button id="nine" class="inputss" onclick="displayScreen('9')">9</button>
+                    <button id="mult" class="operators" onclick="displayScreen('*')">&#xd7;</button>    
+                    <button id="four" class="inputss" onclick="displayScreen('4')">4</button>
+                    <button id="five" class="inputss" onclick="displayScreen('5')">5</button>
+                    <button id="six" class="inputss" onclick="displayScreen('6')">6</button>
+                    <button id="subs" class="operators" onclick="displayScreen('-')" >&#x2212;</button>
+                    <button id="one" class="inputss" onclick="displayScreen('1')">1</button>
+                    <button id="two" class="inputss" onclick="displayScreen('2')">2</button>
+                    <button id="three" class="inputss" onclick="displayScreen('3')">3</button>
+                    <button id="add" class="operators"  onclick="displayScreen('+')">&#x2b;</button>
+                    <button id="zero" class="inputss" style="grid-column: span 3;" onclick="displayScreen('0')">0</button>
+                    <button id="equals" class="equal"  onclick="Calculate()">&#x3d;</button>
+              
+                 <!-- Buraya github linki eklenicek footer oluşturulacak-->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <a href="https://github.com/BerkaySerbetci">
+            <img src="C:\Users\berka\Desktop\projects\hesap makinesi\GitHub-Mark-120px-plus.png" >
+
+        </a>
+    </div>
+    <script src="calculator.js"></script>
+</body>
